@@ -1,4 +1,4 @@
- import { useState } from "react";
+import { useState } from "react";
 import {
   Phone,
   MapPin,
@@ -30,7 +30,8 @@ import image3 from "../../assets/img/4.jpg";
 import image4 from "../../assets/img/baidatsau.jpg";
 import image5 from "../../assets/img/ao.jpg";
 import image6 from "../../assets/img/house.jpg";
-
+import image7 from "../../assets/img/saurieng2.jpg";
+ 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -40,7 +41,7 @@ const Home = () => {
     needs: "",
   });
 
-  const landImages = [image1, image2, image3, image4, image5, image6];
+  const landImages = [image1, image2, image3, image4, image5, image6,image7];
  
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
@@ -148,7 +149,7 @@ const Home = () => {
                 <Card.Body className="text-center">
                   <div className="info-icon">💰</div>
                   <Card.Title>Mức giá thuê</Card.Title>
-                  <Card.Text className="info-value">250 triệu/ năm</Card.Text>
+                  <Card.Text className="info-value">290 triệu/ năm</Card.Text>
                   <Card.Text>Mức giá có thể thương lượng</Card.Text>
                 </Card.Body>
               </Card>
@@ -281,7 +282,7 @@ const Home = () => {
                 <Card.Body>
                   <Card.Title style={{textAlign: "center"}}> <h3>Chi tiết đầu tư</h3></Card.Title>
                   <div className="mb-3">
-                    <strong>Giá thuê đất:</strong> 250 triệu đồng/ năm ( còn thương lượng )
+                    <strong>Giá thuê đất:</strong> 290 triệu đồng/ năm ( còn thương lượng )
                   </div>
                   
                   <div>
@@ -468,18 +469,7 @@ const Home = () => {
                 <span>vemaybay6b5@gmail.com</span>
               </div>
             </Col>
-            <Col md={4} className="mb-3">
-              <h4>Theo dõi chúng tôi</h4>
-              <div className=" text-white text-center">
-                <a href="#" className="social-link">
-                  <Facebook size={20} />
-                </a>
-                <a href="#" className="social-link">
-                  <Instagram size={20} />
-                </a>
-                
-              </div>
-            </Col>
+             
           </Row>
           <hr className="border-light" />
           <div className="text-center">
