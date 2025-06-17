@@ -288,10 +288,9 @@ const Home = () => {
       <section id="calculator" className="py-5 bg-light">
         <Container className="d-flex flex-column align-items-center">
           <div className="text-center mb-5">
-            <h2 className="section-title">Investment Calculator</h2>
-            <p className="section-subtitle">See your potential returns with this premium land investment</p>
+            
           </div>
-          <Row style={{display: "block", justifyContent: "center"}}>
+          <Row style={{display: "flex", justifyContent: "center"}}>
             <Col md={6} className="mb-4 text-center mb-5">
               <Card className="shadow-sm content" >
                 <Card.Body>
@@ -308,7 +307,7 @@ const Home = () => {
             </Col>
             <Col md={6} className="mb-4">
               <Card className="shadow-sm text-center mb-5">
-                <Card.Title style={{textAlign: "center"}}>Lợi nhuận hàng năm dự kiến</Card.Title>
+                <Card.Title style={{textAlign: "center"}}><h3>Lợi nhuận hàng năm dự kiến</h3></Card.Title>
                 <Card.Body>
                   <div className="mb-3 ">
                     <strong>Sầu riêng (Ri6):</strong><br />
@@ -425,7 +424,7 @@ const Home = () => {
                       />
                     </Form.Group>
                     <Button variant="success" type="submit" className="w-100">
-                      Submit Inquiry
+                   Gửi yêu cầu
                     </Button>
                   </Form>
                 </Card.Body>
