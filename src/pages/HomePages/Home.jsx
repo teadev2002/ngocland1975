@@ -1,5 +1,4 @@
- 
-import { useState } from "react";
+ import { useState } from "react";
 import {
   Phone,
   MapPin,
@@ -42,50 +41,8 @@ const Home = () => {
   });
 
   const landImages = [image1, image2, image3, image4, image5, image6];
-
-  const amenities = [
-    { name: "International School", distance: "2km", icon: "🏫" },
-    { name: "Shopping Mall", distance: "1.5km", icon: "🏬" },
-    { name: "General Hospital", distance: "3km", icon: "🏥" },
-    { name: "Metro Station", distance: "1km", icon: "🚇" },
-    { name: "Park & Recreation", distance: "500m", icon: "🌳" },
-    { name: "Banking Center", distance: "1.2km", icon: "🏦" },
-  ];
-
-  const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Real Estate Investor",
-      image: image1,
-      content:
-        "GreenLand helped me find the perfect investment property. The location is excellent and the ROI has exceeded my expectations. Highly recommended!",
-      rating: 5,
-    },
-    {
-      name: "Michael Chen",
-      role: "Property Developer",
-      image: image2,
-      content:
-        "Professional service and transparent process. The land documentation was complete and the team guided us through every step of the purchase.",
-      rating: 5,
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "First-time Buyer",
-      image: image3,
-      content:
-        "As a first-time land buyer, I was nervous about the process. GreenLand made it simple and stress-free. Great investment opportunity!",
-      rating: 5,
-    },
-  ];
-
-  const investmentCalculator = {
-    landPrice: 2500000,
-    appreciationRate: 8,
-    years: 5,
-  };
+ 
+ 
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
@@ -93,14 +50,7 @@ const Home = () => {
   };
 
   
-  const calculateInvestmentReturn = () => {
-    const futureValue =
-      investmentCalculator.landPrice *
-      Math.pow(1 + investmentCalculator.appreciationRate / 100, investmentCalculator.years);
-    const totalReturn = futureValue - investmentCalculator.landPrice;
-    const roi = ((futureValue - investmentCalculator.landPrice) / investmentCalculator.landPrice) * 100;
-    return { futureValue, totalReturn, roi };
-  };
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -250,7 +200,7 @@ const Home = () => {
           </div>
            <div style={{ width: "100%", height: "450px" }}>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.54801515164053!2d106.27557589208475!3d11.278439438213727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1750093388884!5m2!1svi!2s"
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3912.746610220318!2d106.2731096!3d11.2800277!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDE2JzQyLjQiTiAxMDbCsDE2JzMxLjUiRQ!5e0!3m2!1svi!2s!4v1750138102328!5m2!1svi!2s%22%20width=%22600%22%20height=%22450%22%20style=%22border:0;%22%20allowfullscreen=%22%22%20loading=%22lazy%22%20referrerpolicy=%22no-referrer-when-downgrade"
         width="100%"
         height="100%"
         style={{ border: 0 }}
@@ -274,18 +224,7 @@ const Home = () => {
                   </div>
                 </Card.Body>
               </Card>
-              {/* <Card className="shadow-sm">
-                <Card.Body>
-                  <Card.Title>Location Highlights</Card.Title>
-                  <ul className="list-unstyled">
-                    <li className="mb-2">✓ 15 minutes to city center</li>
-                    <li className="mb-2">✓ Direct highway access</li>
-                    <li className="mb-2">✓ Planned metro extension nearby</li>
-                    <li className="mb-2">✓ Growing business district</li>
-                    <li>✓ Future development zone</li>
-                  </ul>
-                </Card.Body>
-              </Card> */}
+            
             </Col>
             <Col md={6} className="mb-4">
               <div className="position-relative rounded shadow">
@@ -299,28 +238,7 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Surrounding Amenities */}
-      {/* <section id="amenities" className="py-5 bg-light">
-        <Container>
-          <div className="text-center mb-5">
-            <h2 className="section-title">Surrounding Amenities</h2>
-            <p className="section-subtitle">Everything you need within reach</p>
-          </div>
-          <Row>
-            {amenities.map((amenity, index) => (
-              <Col key={index} md={4} className="mb-4">
-                <Card className="h-100 shadow-sm text-center">
-                  <Card.Body>
-                    <div className="amenity-icon mb-3">{amenity.icon}</div>
-                    <Card.Title>{amenity.name}</Card.Title>
-                    <Card.Text className="text-success">{amenity.distance} away</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section> */}
+     
 
       {/* Image Gallery */}
       <section id="gallery" className="py-5">
@@ -368,16 +286,16 @@ const Home = () => {
 
       {/* Investment Calculator */}
       <section id="calculator" className="py-5 bg-light">
-        <Container>
+        <Container className="d-flex flex-column align-items-center">
           <div className="text-center mb-5">
             <h2 className="section-title">Investment Calculator</h2>
             <p className="section-subtitle">See your potential returns with this premium land investment</p>
           </div>
           <Row style={{display: "block", justifyContent: "center"}}>
-            <Col md={6} className="mb-4">
-              <Card className="shadow-sm">
+            <Col md={6} className="mb-4 text-center mb-5">
+              <Card className="shadow-sm content" >
                 <Card.Body>
-                  <Card.Title>Chi tiết đầu tư</Card.Title>
+                  <Card.Title style={{textAlign: "center"}}> <h3>Chi tiết đầu tư</h3></Card.Title>
                   <div className="mb-3">
                     <strong>Giá thuê đất:</strong> 250 triệu đồng/ năm ( còn thương lượng )
                   </div>
@@ -389,10 +307,10 @@ const Home = () => {
               </Card>
             </Col>
             <Col md={6} className="mb-4">
-              <Card className="shadow-sm">
+              <Card className="shadow-sm text-center mb-5">
                 <Card.Title style={{textAlign: "center"}}>Lợi nhuận hàng năm dự kiến</Card.Title>
                 <Card.Body>
-                  <div className="mb-3">
+                  <div className="mb-3 ">
                     <strong>Sầu riêng (Ri6):</strong><br />
                     Doanh thu: 900,000,000 ₫/ha/năm<br />
                     Chi phí: 300,000,000 ₫/ha/năm<br />
@@ -548,46 +466,44 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-dark text-white py-4">
+      <footer className="bg-dark text-white py-4  text-center">
         <Container>
           <Row>
             <Col md={4} className="mb-3">
               <h3 className="footer-logo">Ngọc Land</h3>
               
             </Col>
-            <Col md={4} className="mb-3">
+            <Col md={4} className="mb-3 ">
               <h4>Liên hệ với chúng tôi</h4>
-              <div className="d-flex align-items-center mb-2">
+              <div className="  mb-2">
                 <MapPin size={16} className="me-2" />
                 <span>6b5 Hà Huy Giáp, Phường Thạnh Lộc, Quận 12, Thành phố Hồ Chí Minh</span>
               </div>
-              <div className="d-flex align-items-center mb-2">
+              <div className="   mb-2">
                 <Phone size={16} className="me-2" />
                 <span>0902715456</span>
               </div>
-              <div className="d-flex align-items-center">
+              <div className=" ">
                 <Mail size={16} className="me-2" />
                 <span>vemaybay6b5@gmail.com</span>
               </div>
             </Col>
             <Col md={4} className="mb-3">
-              <h4>Follow Us</h4>
-              <div className="d-flex gap-2">
+              <h4>Theo dõi chúng tôi</h4>
+              <div className=" text-white text-center">
                 <a href="#" className="social-link">
                   <Facebook size={20} />
                 </a>
                 <a href="#" className="social-link">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="social-link">
-                  <Twitter size={20} />
-                </a>
+                
               </div>
             </Col>
           </Row>
           <hr className="border-light" />
           <div className="text-center">
-            <p>© 2024 GreenLand Real Estate. All rights reserved.</p>
+            <p>© 2025 Bản quyền thuộc về Ngọc Land.</p>
           </div>
         </Container>
       </footer>
