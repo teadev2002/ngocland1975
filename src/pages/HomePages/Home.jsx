@@ -95,7 +95,7 @@ const Home = () => {
                <Nav.Link onClick={() => scrollToSection("hero")}>Trang chủ</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("land-info")}>Thông tin đất</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("location")}>Vị trí đất</Nav.Link>
-              <Nav.Link onClick={() => scrollToSection("amenities")}>Amenities</Nav.Link>
+              {/* <Nav.Link onClick={() => scrollToSection("amenities")}>Amenities</Nav.Link> */}
              <Nav.Link onClick={() => scrollToSection("gallery")}>Hình ảnh vườn</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("calculator")}>Mức giá</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("contact")}> </Nav.Link>
@@ -218,7 +218,7 @@ const Home = () => {
                   <div >
                     <Card.Title>Địa chỉ</Card.Title>
                     <Card.Text>
-                    77HG+95 Dương Minh Châu District, Tây Ninh, Vietnam
+                    77HG+95 huyện Dương Minh Châu, Tây Ninh, Vietnam
                       <img src="https://i.postimg.cc/WzyKCb80/gate.jpg" alt="Location map" className="img-fluid mt-2" />
                     </Card.Text>
                   </div>
@@ -244,8 +244,8 @@ const Home = () => {
       <section id="gallery" className="py-5">
         <Container>
           <div className="text-center mb-5">
-            <h2 className="section-title">Property Gallery</h2>
-            <p className="section-subtitle">See the beauty and potential of this premium land</p>
+            <h2 className="section-title">Ảnh vườn</h2>
+           
           </div>
           <Carousel
             activeIndex={currentImageIndex}
