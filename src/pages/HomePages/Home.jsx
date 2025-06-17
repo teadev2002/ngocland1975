@@ -42,16 +42,11 @@ const Home = () => {
 
   const landImages = [image1, image2, image3, image4, image5, image6];
  
- 
-
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
   };
-
-  
  
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
@@ -95,7 +90,7 @@ const Home = () => {
                <Nav.Link onClick={() => scrollToSection("hero")}>Trang chủ</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("land-info")}>Thông tin đất</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("location")}>Vị trí đất</Nav.Link>
-              {/* <Nav.Link onClick={() => scrollToSection("amenities")}>Amenities</Nav.Link> */}
+            
              <Nav.Link onClick={() => scrollToSection("gallery")}>Hình ảnh vườn</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("calculator")}>Mức giá</Nav.Link>
               <Nav.Link onClick={() => scrollToSection("contact")}> </Nav.Link>
@@ -114,13 +109,6 @@ const Home = () => {
             className="hero-image"
             fluid
           />
-        </div>
-        <div className="hero-content text-center text-white" style={{textAlign: "center"}}>
-          <Container>
-           
-            
-           
-          </Container>
         </div>
       </section>
 
@@ -237,9 +225,6 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
-     
-
       {/* Image Gallery */}
       <section id="gallery" className="py-5">
         <Container>
@@ -334,10 +319,6 @@ const Home = () => {
         </Container>
       </section>
 
-    
-      
-
-      {/* Why Choose Us */}
       <section id="why-choose" className="py-5 bg-light">
         <Container>
           <div className="text-center mb-5">
