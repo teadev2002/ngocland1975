@@ -451,7 +451,7 @@ const Home = () => {
                   <div className="d-flex align-items-start">
                     <MapPin size={20} className="text-success me-3" />
                     <div>
-                      <strong>Office địa chỉ</strong>
+                      <strong>Địa chỉ vườn</strong>
                       <p className="text-muted mb-0">
                         77HG+95 Dương Minh Châu District, Tây Ninh, Vietnam
                       </p>
