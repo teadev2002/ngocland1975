@@ -384,7 +384,7 @@ const Home = () => {
                       />
                     </Form.Group>
                     <Form.Group className="mb-3">
-                      <Form.Label>Số điện </Form.Label>
+                      <Form.Label>Số điện thoại </Form.Label>
                       <Form.Control
                         type="tel"
                         id="phone"
