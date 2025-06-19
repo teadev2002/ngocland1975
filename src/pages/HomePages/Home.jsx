@@ -473,7 +473,7 @@ const Home = () => {
           </Row>
           <hr className="border-light" />
           <div className="text-center">
-            <p>© 2025 Bản quyền thuộc về Ngọc Land.</p>
+            <p>© 2025 Bản quyền thuộc về Github: teadev2002.</p>
           </div>
         </Container>
       </footer>
